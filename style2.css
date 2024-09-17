@@ -1,0 +1,54 @@
+.contenedor{
+    background-color: aqua;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 2fr 1fr 7fr 1fr;
+    grid-template-areas:"cabecera cabecera cabecera"    
+                        "menu     menu     menu"
+                        "contenido contenido publi"
+                        "pie      pie      pie"
+                        ;
+}
+.contenedor>div{
+    background-color: chartreuse;
+}
+.contenedor .cabecera{
+    background-color: yellow;
+    grid-column: cabecera;
+}
+.contenedor .menu{
+    background-color: coral;
+    grid-column: menu;
+}.contenedor .contenido{
+    background-color: antiquewhite;
+    grid-column: contenido;
+}.contenedor .publi{
+    background-color: antiquewhite;
+    grid-column: publi; 
+}
+.contenedor .pie{
+    background-color: darkkhaki;
+    grid-column: pie;
+}.contenido{
+    display: flex;
+}.cont1{
+    margin-top: 40px;
+    height: 150px;
+    width: 45%;
+    background-color: brown;
+}.cont2{
+    margin-top: 40px;
+    margin-left: 15px;
+    height: 150px;
+    width: 45%;
+    background-color: brown;
+}.pub{
+    background-color: blueviolet;
+    margin-left: 60px;
+    width: 75%;
+    height: 75%;
+}
